@@ -5,13 +5,14 @@ i. Estrarre e posizionare in un vettore V gli
 elementi della i-esima riga della matrice MAT.*/
 
 #include<stdio.h>
+#define DIM 100 //non puoi usare DIM se prima non lo dichiari :)
 int main(){
-    
+
     int n,m,i,j,index;
     int mat[DIM][DIM];
     int v[DIM];
 
-    
+
     printf("Il numero delle righe da leggere (<=100): ");
     scanf("%d", &n);
     printf("\nIl numero delle colonne da leggere (<=100): ");
@@ -20,7 +21,7 @@ int main(){
     for(i=0; i<n; i++){
         printf("\nLettura della riga di indice %d\n" ,i);
             for(j=0; j<m; j++){
-                printf("\nElemento con indice [%d][%d]: "i,j);
+                printf("\nElemento con indice [%d][%d]: ",i,j);
                 scanf("%d",&mat[i][j]);
             }
     }

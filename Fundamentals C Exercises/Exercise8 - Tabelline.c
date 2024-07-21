@@ -6,7 +6,7 @@ al numero moltiplicato per 10.*/
 #include<stdio.h>
 
 int main(){
-    
+
     //***Definisco le variabili iniziali***
     int n, prodotto;
 
@@ -17,7 +17,7 @@ int main(){
 
     //***In questo caso, ragiono su come dovrebbe funzionare il codice***
     printf("\nOutput: ");
-    for(int i=0; i<=10; 1++){
+    for(int i=0; i<=10; i++){
         prodotto = n*i;
         printf("%d", prodotto);
     }

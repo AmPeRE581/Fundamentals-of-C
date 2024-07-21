@@ -14,12 +14,12 @@ void calcolo(int n){
     if(n<5){
         risultato = 1;
         for(int i=1; i<=n; i++){
-            risultato *=i;
+            risultato=risultato * i;
         }
-        else {
-            risultato = n*3;
-        }
+    } else {
+        risultato = (n * 3);
     }
+
     printf("Il risultato per %d è: %d\n", n, risultato);
 }
 
@@ -28,7 +28,7 @@ int main(){
 
     printf("Inserisci un intero positivo (0 per terminare): ");
     scanf("%d", &n);
-    
+
     while(n != 0){
         if(n>0){
             calcolo(n);

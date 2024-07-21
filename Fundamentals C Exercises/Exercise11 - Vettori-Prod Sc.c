@@ -8,7 +8,7 @@ tra i due vettori.*/
 int main(){
 
     //***Iniziallizazione e lettura parametri***
-    int prodotto=0; 
+    int prodotto=0;
     int i=0;
     int vet1[7];
     int vet2[7];
@@ -22,12 +22,12 @@ int main(){
     //***Secondo array in fase di lettura***
     for(i=0;i<7;i++){
         printf("\nFornire elemento in posizione %d del secondo vettore: ",i);
-        scanf("%d", &vett2[i]);
+        scanf("%d", &vet2[i]);
     }
 
     //***Prodotto scalare in corso***
     for(i=0;i<7;i++){
-        prodotto=prodotto+(vett1[i]*vett2[i]);
+        prodotto=prodotto+(vet1[i]*vet2[i]);
     }
 
     //***Stampa finale e verifica***
