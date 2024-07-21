@@ -1,3 +1,5 @@
+/*Esercizio28: Versione2 Floyd*/
+
 #include<stdio.h>
 
 void funzione(int x){
