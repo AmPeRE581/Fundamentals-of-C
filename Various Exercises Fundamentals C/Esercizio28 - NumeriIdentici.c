@@ -4,7 +4,7 @@
 
 int main(){
 
-    int num1, num2;
+    int num1, num2; 
 
     printf("Inserisci il primo numeretto: ");
     scanf("%d", &num1);
