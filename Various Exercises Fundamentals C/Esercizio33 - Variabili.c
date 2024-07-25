@@ -1,3 +1,6 @@
+/*Esercizio33: Scrivi un programma in c che verifica se per ogni riga di una matrice di dimensione nxn di reali, 
+la somma degli elementi si mantiene costante.*/
+
 #include <stdio.h>
 #include <stdbool.h>
 
