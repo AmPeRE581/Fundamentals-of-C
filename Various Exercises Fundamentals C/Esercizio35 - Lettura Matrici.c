@@ -9,7 +9,7 @@ dal numero 1, mentre i restanti elementi sono 0.
 principale sono pari a 0.
 
 - Per ciascuno dei tre casi implementare una funzione non void, nello specifico una
-funzione bool, che verifica le istruzioni e restituisce true o false a seconda dei casi.b*/
+funzione bool, che verifica le istruzioni e restituisce true o false a seconda dei casi.*/
 
 #include<stdio.h>
 #include<stdbool.h>
