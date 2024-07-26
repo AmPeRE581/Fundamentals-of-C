@@ -1,3 +1,5 @@
+/*Esercizio37: Scrivere un programma che consente di calcolare l'area di una stanza.*/
+
 #include <stdio.h>
 #include <math.h>
 
