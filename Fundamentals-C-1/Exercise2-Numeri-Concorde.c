@@ -2,7 +2,7 @@
 stampare il messaggio 'numeri di segno concorde' se x e y hanno lo stesso segno.
 Esempio: se x=3 e y=9 il programma stampa 'numeri di segno concorde' e termina; se x=2 e y=-7 il programma termina direttamente.*/
 
-#include<stdio.h>
+#include <stdio.h>
 
 int main(){
     int x,y;

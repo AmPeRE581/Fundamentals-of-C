@@ -1,7 +1,7 @@
 /*Esercizio1_1: Leggere tre numeri interi l1, l2 ed l3 che rappresentano i lati di un triangolo, calcolare e scrivere il perimetro.
 Esempio: Se l1=3, l2=7, l3=1, il programma stampa 'perimetro=11'*/
 
-#include<stdio.h>
+#include <stdio.h>
 
 int main(){
     int l1, l2, l3;
