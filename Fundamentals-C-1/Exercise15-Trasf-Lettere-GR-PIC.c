@@ -57,6 +57,7 @@ int main() {
 
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 
+//Questo invece è il metodo alternativo, molto più semplice...
 int main(){
     char c;
     printf("Inserire un carattere maiuscolo: ");
