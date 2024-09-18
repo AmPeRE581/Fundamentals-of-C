@@ -4,7 +4,7 @@ sia il precedente contenuto di b e viceversa). Esempio: se a=3 e b=102, scrivere
 #include <stdio.h>
 
 int main(){
-    int a,b;
+    int a,b, temp;
 
     printf("Inserisci il numero (a): ");
     scanf("%d", &a);
