@@ -15,3 +15,15 @@ int main(){
     scrivi_10();
     printf("Fatto!!\n");
 }
+
+/*Alternativa a int main, qualora siamo in funzioni void con parametri.*/
+
+int main(){
+    int n;
+    printf("Immettere un numero >0: ");
+    scanf("%d",&n);
+    scrivi(n);
+    printf("Fatto!!\n");
+    scrivi(n*4);
+    printf("Fatto!!\n");
+}
