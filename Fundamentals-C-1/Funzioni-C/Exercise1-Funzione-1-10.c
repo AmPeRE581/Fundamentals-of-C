@@ -2,7 +2,7 @@
 
 void scrivi_10(){
     int i;
-    for(i=0; i<=10; i++){
+    for(i=0; i<=10; i++){ //Da aggiungere x qui for(i=0; i<=x; i++){} solo nel caso di una funzione void con parametri
         printf("%d",i);
     }
 
