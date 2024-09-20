@@ -1,5 +1,4 @@
-/*Esercizio1_3: Funzione VOID Con Parametri*/ /*In base al valore scritto nella riga 18 ci consente di scrivere gli asterischi --->
----> in base al valore immesso...*/
+/*Esercizio1_3: Funzione VOID Con Parametri*/ /*NON FUNZIONANTE DA VERIFICARE!!!*/
 
 #include<stdio.h>
 #define DIM 100
