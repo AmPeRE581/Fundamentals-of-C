@@ -1,5 +1,7 @@
 /*Esercizio1_4: Esempio: Scrivi un programma che, dati un prezzo e uno sconto, calcola il prezzo scontato.*/
 
+/*Funzione FLOAT - C*/
+
 #include <stdio.h>
 
 float sconto(float prezzo_originale, float sconto){

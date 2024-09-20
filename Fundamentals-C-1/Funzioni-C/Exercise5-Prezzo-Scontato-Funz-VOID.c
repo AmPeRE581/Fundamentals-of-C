@@ -1,5 +1,7 @@
 /*Esercizio1_5: Esempio: Scrivi un programma che, dati un prezzo e uno sconto, calcola il prezzo scontato.*/
 
+/*Funzione VOID - C*/
+
 #include <stdio.h>
 
 void sconto(float prezzo_originale, float sconto){
