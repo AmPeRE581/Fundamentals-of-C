@@ -6,7 +6,7 @@
 
 void scrivi(int mat[][DIM], int x){
     int i,j;
-    printf("Stampo Matrice\n");
+    printf("Stampo Matrice...\n");
     for(i=0; i<x; i++){
         for(j=0; j<x; j++){
             printf("%d",mat[i][j]);
@@ -16,7 +16,7 @@ void scrivi(int mat[][DIM], int x){
 
 void leggi(int mat[][DIM], int x){
     int i,j;
-    printf("\nLeggo Matrice\n");
+    printf("\nLeggo Matrice...\n");
     for(i=0; i<x; i++){
         for(j=0; j<x; j++){
             scanf("%d", &mat[i][j]);
@@ -29,7 +29,7 @@ int main(){
     int m2[DIM][DIM];
     int n;
 
-    printf("Dimensione Matrice\n?");
+    printf("Dimensione Matrice? ---->");
     scanf("%d", &n);
 
     printf("Effettuo la lettura tramite la matrice funzione\n");
