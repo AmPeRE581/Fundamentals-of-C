@@ -1,4 +1,5 @@
-/*Esercizio1_2: Funzioni VOID Senza Parametri*/
+/*Esercizio1_2: Funzioni VOID Senza Parametri*/ /*In base al valore scritto nella riga 18 ci consente di scrivere gli asterischi --->
+---> in base al valore immesso...*/
 
 #include <stdio.h>
 
