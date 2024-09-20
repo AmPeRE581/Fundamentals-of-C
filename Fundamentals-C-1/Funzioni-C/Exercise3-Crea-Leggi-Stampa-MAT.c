@@ -1,4 +1,4 @@
-/*Esercizio1_3: Funzione VOID Con Parametri*/ /*NON FUNZIONANTE DA VERIFICARE!!!*/
+/*Esercizio1_3: Funzione VOID Con Parametri*/ /*NON FUNZIONANTE DA VERIFICARE!!!*/ - /*Programma che Crea/Legge/Stampa Matrici a piacimento dell'utente*/
 
 #include <stdio.h>
 #define DIM 100
