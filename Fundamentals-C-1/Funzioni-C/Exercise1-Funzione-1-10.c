@@ -10,9 +10,9 @@ void scrivi_10(){
 }
 
 int main(){
-    scrivi_10();
+    scrivi_10(); /*Questa è la ri/chiamata della funzione!*/
     printf("Fatto!!\n");
-    scrivi_10();
+    scrivi_10(); /*Questa è la ri/chiamata della funzione!*/
     printf("Fatto!!\n");
 }
 
