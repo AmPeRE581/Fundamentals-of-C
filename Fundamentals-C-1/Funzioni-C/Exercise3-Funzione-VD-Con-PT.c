@@ -1,6 +1,6 @@
 /*Esercizio1_3: Funzione VOID Con Parametri*/ /*NON FUNZIONANTE DA VERIFICARE!!!*/
 
-#include<stdio.h>
+#include <stdio.h>
 #define DIM 100
 
 void scrivi(int mat[][DIM], int x){
