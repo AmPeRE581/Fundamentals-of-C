@@ -1,4 +1,4 @@
-/*Scrivere un programma in c che scrive una funzione che calcola e restituisce il fattoriale di un numeri intero n*/
+/*Scrivere un programma in c che scrive una funzione che calcola e restituisce il fattoriale di un numeri intero n*/ /*Versione 1.0*/
 
 #include <stdio.h>
 
