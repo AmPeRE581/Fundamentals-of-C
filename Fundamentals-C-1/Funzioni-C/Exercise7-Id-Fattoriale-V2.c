@@ -1,4 +1,4 @@
-/*Scrivere un programma in c che scrive una funzione che calcola e restituisce il fattoriale di un numeri intero n*/ 
+/*Esercizio1_7: Scrivere un programma in c che scrive una funzione che calcola e restituisce il fattoriale di un numeri intero n*/ 
 /*Versione 2.0*/
 
 /*Spiegazione: L'istruzione "return-espressione", provoca la terminazione della funzione e la restituzione del controllo al chiamante
