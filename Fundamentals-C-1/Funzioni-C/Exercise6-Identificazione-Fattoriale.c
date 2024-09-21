@@ -12,3 +12,9 @@ int fattoriale(int n){
 
     return numero_fattoriale;
 }
+
+int main(){
+    int fatt=fattoriale(n);
+
+    printf("Il fattoriale di n risulta essere: %d\n", fatt);
+}
