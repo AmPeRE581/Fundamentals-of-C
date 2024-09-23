@@ -28,7 +28,7 @@ int main(){
     scanf("%d", &n);
     
     for(i=1; i<=n; i++){
-        printf("Immettere due numeri interi relativi alla coppia numero %d: ",i)
+        printf("Immettere due numeri interi relativi alla coppia numero %d: ",i);
         scanf("%d %d",&n1, &n2);
     }
     if(n1<=n2){
