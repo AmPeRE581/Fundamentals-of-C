@@ -36,7 +36,7 @@ int main(){
     printf("Inserisci il secondo numero: ");
     scanf("%d", &num2);
 
-    printf("Scegli l'operazione da eseguire: 1-2-3-4");
+    printf("Scegli l'operazione da eseguire: 1-2-3-4\n");
 
     printf("1. Somma\n");
     printf("2. Sottrazione\n");
