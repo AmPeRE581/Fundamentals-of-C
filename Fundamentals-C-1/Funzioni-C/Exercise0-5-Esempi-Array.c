@@ -36,6 +36,7 @@ memorizzarli in un array e scrivere l'array così ottenuto.*/
 
 int main(){
     int vet[DIM];
+    int riempimento;
     printf("Quale e' il riempimento del vettore (deve essere <= di %d): ", DIM);
     scanf("%d", &riempimento);
 
