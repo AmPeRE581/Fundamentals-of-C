@@ -4,6 +4,9 @@
 
 La funzione leggi riceve un array di interi (x) ed un intero (n) e legge n elementi dell'array x*/
 
+#include <stdio.h>
+#define DIM 10
+
 void leggi (int x[], int n){
     int i;
     printf("Lettura di %d elementi di un vettore \n", n);
