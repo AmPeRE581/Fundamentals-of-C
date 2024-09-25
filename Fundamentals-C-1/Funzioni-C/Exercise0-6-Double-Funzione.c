@@ -1,4 +1,6 @@
-/*Funzione media riceve un array di interi (x) ed il suo riempimento (n) e restituisce la media calcolata su gli elementi di x*/
+/*Esercizio0_6: Funzione media riceve un array di interi (x) ed il suo riempimento (n) e restituisce la media calcolata su gli elementi di x*/
+
+#include <stdio.h>
 
 double media(int x[], int n){
     int somma=0, i;

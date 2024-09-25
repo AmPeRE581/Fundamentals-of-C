@@ -1,4 +1,4 @@
-/*Esempio: Chiamata di una funzione nel main*/
+/*Esercizio0_4: Esempio: Chiamata di una funzione nel main*/
 
 #include <stdio.h>
 #define DIM 6

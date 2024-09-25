@@ -1,4 +1,4 @@
-/*Esempi di funzioni con Array...*/
+/*Esercizio0_5: Esempi di funzioni con Array...*/
 
 /*Esempio di funzioni con array come argomenti...
 
