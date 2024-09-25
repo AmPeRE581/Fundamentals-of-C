@@ -17,4 +17,12 @@ void scriviSe(int x[], int n){
     int i;
 
     printf("Scrittura degli elementi del vettore maggiori della media(%g)\n", media_vett);
+
+    for(i=0; i<n; i++){
+        if(x[i]> media_vett){
+            printf("%d\t", x[i]);
+        }
+    }
+
+    printf("\n");
 }
