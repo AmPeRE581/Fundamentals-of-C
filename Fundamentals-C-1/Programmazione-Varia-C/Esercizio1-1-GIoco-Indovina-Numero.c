@@ -4,22 +4,70 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
+#include <math.h> /*Per verificare se un numero è primo...*/
 
 int main(){
-    int numero_segreto, tentativo, punteggio = 100, errori = 0, suggerimenti_usati = 0;
+    int numero_segreto, tentativo, punteggio = 100, errori = 0, suggerimenti_usati = 0, livello, giocatori;
     char risposta[10]; /*Per leggere la risposta da parte utente...DA RICORDARE: che MAX le risposte che si possono dare sono "10"*/
+    int min, max;
+
+    /*Scegli il livello di difficoltà e il numero di giocatori*/
+    printf("Scegli il livello di difficoltà (1-5):\n");
+    printf("Livello-1: Facile\n");
+    printf("Livello-2: Medio\n");
+    printf("Livello-3: Difficile\n");
+    printf("Livello-4: Estremo\n");
+    printf("Livello-5: IMPOSSIBILE\n");
+    scanf("%d", &livello);
+
+    printf("Quanti giocatori? (1-2):");
+    scanf("%d", &giocatori);
+
+    /*Impostiamo l'intervallo dei numeri in base al livello di selezione*/
+    switch(livello){
+    
+    case 1:
+        min = 1;
+        max = 20;
+        break
+
+    case 2:
+        min = 1;
+        max = 100;
+        break;
+
+    case 3: 
+        min = 1;
+        max = 1000;
+        break;
+
+    case 4: 
+        min = 1;
+        max = 10000;
+        break;
+
+    case 5: 
+        min = 1;
+        max = 100000;
+        break; 
+
+    default: 
+        printf("Livello non valido. Devi selezionare da 1 a 5!!...");
+        return 1;    
+    }
 
     /*Inizializza il generatore di numeri casusali*/
 
-    srand(time(NULL));
-
-    /*Genera un numero casuale tra 1 e 100*/
-    numero_segreto = rand() % 100+1;
+    numero_segreto = rand() % (max-min+1) + min;
 
     printf("Benvenuto nel gioco dell'Indovina il Numero\n");
-    printf("Ho pensato a un numero tra 1 e 100. Prova a indovinarlo!\n");
+    printf("Ho pensato a un numero tra %d e %d. Prova a indovinarlo!\n", min, max);
 
+    /*Ciclo principale del VideoGame...*/
     do{
+        printf("Giocatore %d, inserisci il tuo tentativo: ", giocatori == 1 ? 1 : errori % 2+1);
+        scanf("%d", &tentativo);
+
         printf("Inserisci il tuo tentativo: ");
         scanf("%d", &tentativo);
 
