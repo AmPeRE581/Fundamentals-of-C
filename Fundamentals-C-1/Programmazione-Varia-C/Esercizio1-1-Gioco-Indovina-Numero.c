@@ -29,7 +29,7 @@ int main(){
     case 1:
         min = 1;
         max = 20;
-        break;
+        break
 
     case 2:
         min = 1;
@@ -103,7 +103,7 @@ int main(){
         printf("Mi dispiace, hai perso!\n");
         printf("Il numero era: %d\n", numero_segreto);
         break;
-    } 
+    } while(1);
 
     return 0;
 }
