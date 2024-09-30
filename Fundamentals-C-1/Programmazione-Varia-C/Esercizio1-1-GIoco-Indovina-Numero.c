@@ -25,7 +25,6 @@ int main(){
 
     /*Impostiamo l'intervallo dei numeri in base al livello di selezione*/
     switch(livello){
-    
     case 1:
         min = 1;
         max = 20;
