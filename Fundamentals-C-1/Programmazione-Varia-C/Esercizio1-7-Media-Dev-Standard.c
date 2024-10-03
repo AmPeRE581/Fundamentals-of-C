@@ -29,4 +29,19 @@ int main(){
     media = somma/N;
 
     /*Calcola la varianza*/
+    for(i=0; i<N; i++){
+        varianza += pow(numeri[i] - media, 2);
+    }
+
+    varianza /= N;
+
+    /*Calcoliamo la deviazione standard*/
+    deviazione_standard = sqrt(varianza);
+
+    /*Visualizza i risultati finali*/
+
+    printf("La media è: %.2f\n", media);
+    printf("La deviazione standard è: %.2f\n", deviazione_standard);
+
+    return 0;
 }
