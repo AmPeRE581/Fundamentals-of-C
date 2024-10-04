@@ -16,21 +16,20 @@ int main(){
         printf("Inserisci un numero intero positivo: ");
         scanf("%d", &numero);
 
-        somma_divisori=0; /*Condizione di partenza che vale da zero*/
-        for(i=1; i<numero; i++){
-            if(numero%i == 0){
-                somma_divisori +=i;
+        somma_divisori = 0;
+        for(i = 1; i < numero; i++){
+            if (numero % i == 0){
+                somma_divisori += i;
             }
         }
 
-        if(somma_divisori != numero){
+        if(somma_divisori == numero){
+            printf("%d è un numero perfetto! Complimenti hai indovinato!\n", numero);
+            break; //Usciamo dal ciclo while...
+        } else {
             printf("%d non è un numero perfetto. Riprova.\n", numero);
         }
-    } 
-    
-    while(somma_divisori != numero){
-        printf("%d è un numero perfetto! Complimenti hai indovinato!\n", numero);
-    }
+    } while(1); //Il ciclo è in loop, finchè non viene trovata la risposta corretta...e poi si stoppa
 
     return 0;
 }
