@@ -1,4 +1,4 @@
-/*Esercizio1-8: Scrivi un programma in C che:
+/*Esercizio1-8_1: Scrivi un programma in C che:
 
 1.Chieda all'utente di inserire un numero intero positivo.
 2.Verifichi se il numero inserito è perfetto.
