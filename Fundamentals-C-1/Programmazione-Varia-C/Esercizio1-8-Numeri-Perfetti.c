@@ -7,7 +7,7 @@
 #include <stdio.h>
 
 int main(){
-    int numero, i, somma=0;
+    int numero, i, somma=0, somma_divisori;
 
     printf("Inserisci un numero intero positivo: ");
     scanf("%d", &numero);
