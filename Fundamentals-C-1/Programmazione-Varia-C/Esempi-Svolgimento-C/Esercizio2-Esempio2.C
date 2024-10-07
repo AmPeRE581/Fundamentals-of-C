@@ -51,4 +51,16 @@ int main(){
     }
 
     printf("\n");
+
+    /*Calcola e stampa la mediana*/
+    if(N % 2==0){
+        /*Caso1: N rimane pari*/
+
+        int mediana = (array[N/2-1]+array[N/2])/2;
+        printf("La mediana è: %d\n", mediana);
+    } else {
+        /*Caso2: N rimane dispari*/
+        int mediana=array[N/2];
+        printf("La mediana è: %d\n", mediana);
+    }
 }
