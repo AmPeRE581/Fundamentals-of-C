@@ -21,6 +21,7 @@ int main(){
     }
 
     int crescente = 1; /*Flag per indicare se siamo posizionati nella parte crescente*/
+    int decrescente = 1;
     int dispari = numeri[0] % 2; /*Memorizziamo la parità del primo numero*/
 
     for(i=1; i<n; i++){
