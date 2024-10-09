@@ -9,14 +9,14 @@ Nota bene: gli elementi di v sono tutti distinti tra di loro*/
 #define DIM 4 /*Dimensione della matrice...la si può modificare successivamente*/
 
 int main(){
-    int i,j,k, count;
+    int i,j,k,N count;
     float m[DIM][DIM], v[DIM*DIM]; /*Assumiamo che v possa contenere al massimo tutti gli elementi della matrice*/
 
     int v_index = 0; /*Indice per il vettore v*/
 
     /*Lettura della matrice in corso qui di seguito...*/
 
-    printf("Inserisci gli elementi della matrice %dx%d: \n", N, N);
+    printf("Inserisci gli elementi della matrice %dx%d: \n",N, N);
     for(i=0; i<N; i++){
         for(j=0; j<N; j++){
             scanf("%f", &m[i][j]);
@@ -25,12 +25,13 @@ int main(){
     /*Controllo degli elementi ripetuti e inserimento all'interno della matrice DIM*/
     for(i=0; i<N; i++){
         for(j=0; j<N; j++){
-            count = 1 /*Qui il counter parte da 1 dopo due cicli*/
+            count = 1; /*Qui il counter parte da 1 dopo due cicli*/
             for(k=i; k<N; k++){
                 for(int l=0; l<N; l++){
                     if(k != i || l != j){
-                        if(m[i][j] == m[k][l])<
-                        count++;
+                        if(m[i][j] == m[k][l]){
+                            count++;
+                        }
                     }
                 }
             }
