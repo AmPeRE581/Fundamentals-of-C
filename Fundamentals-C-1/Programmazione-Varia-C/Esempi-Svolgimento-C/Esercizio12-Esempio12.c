@@ -9,19 +9,35 @@ Nota bene: gli elementi di v sono tutti distinti tra di loro*/
 #define DIM 4 /*Dimensione della matrice...la si può modificare successivamente*/
 
 int main(){
-    int i,j,k,N count;
-    float m[DIM][DIM], v[DIM*DIM]; /*Assumiamo che v possa contenere al massimo tutti gli elementi della matrice*/
+    int i,j, count, MAX_VALUE, v, k, N;
+    float m[DIM][DIM]; /*Assumiamo che v possa contenere al massimo tutti gli elementi della matrice*/
+    int counts[2 * MAX_VALUE + 1] = 0; /*Array per cominciare il conteggio delle occorrenze*/
+    float v[DIM*DIM];
 
     int v_index = 0; /*Indice per il vettore v*/
 
     /*Lettura della matrice in corso qui di seguito...*/
 
-    printf("Inserisci gli elementi della matrice %dx%d: \n",N, N);
+    printf("Inserisci gli elementi della matrice %dx%d: \n",N);
     for(i=0; i<N; i++){
         for(j=0; j<N; j++){
             scanf("%f", &m[i][j]);
         }
     }
+
+    /*Conteggio delle occorrenze con le stringhe di comando qui di seguito...*/
+    for(i=0; i<N; i++){
+        for(j=0; j<N; j++){
+            counts[(int)(m[i][j] + MAX_VALUE)]++;
+        }
+    }
+
+    for(i = -MAX_VALUE; i<= MAX_VALUE; i++){
+        if(counts[i + MAX_VALUE] > 3){
+            v[v_index++] = i;
+        }
+    }
+
     /*Controllo degli elementi ripetuti e inserimento all'interno della matrice DIM*/
     for(i=0; i<N; i++){
         for(j=0; j<N; j++){
@@ -63,5 +79,4 @@ int main(){
     printf("\n");
 
 return 0;
-
 }
