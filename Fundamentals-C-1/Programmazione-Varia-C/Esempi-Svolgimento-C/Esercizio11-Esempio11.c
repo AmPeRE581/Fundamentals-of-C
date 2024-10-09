@@ -21,29 +21,21 @@ int main(){
     }
 
     int crescente = 1; /*Flag per indicare se siamo posizionati nella parte crescente*/
-    int decrescente = 1;
-    int dispari = numeri[0] % 2; /*Memorizziamo la parità del primo numero*/
 
     for(i=1; i<n; i++){
-        if (dispari){
-            /*Qui ci si trova nel punto decrescente....*/
-            if(numeri[i] %2 == 1 || numeri[i] >= numeri[i-1]){
-                decrescente = 0;
-                break;
-            }
-        } else {
-
-            /*Qui ci si trova nel punto crescente...*/
-            if(numeri[i]%2 == 0 || numeri[i] <= numeri[i-1]){
-                crescente = 0;
-
+        if(numeri[i] < numeri[i-1]){
+            /*Se il numero attualmente in corso, risulta essere minore rispetto al predecessore, allora la sequenza decresce*/
+            if(crescente){
+                crescente=0; 
+            } else {
+                /*Se era già decrescente allora in questo caso, la sequenza sta crescendo*/
+                crescente = -1;
                 break;
             }
         }
-        dispari = numeri[i]%2;
     }
 
-    if(crescente){
+    if(crescente == 1 || crescente == 0){
         printf("La sequenza è bitonica.\n");
     } else {
         printf("La sequenza non è bitonica.\n");
