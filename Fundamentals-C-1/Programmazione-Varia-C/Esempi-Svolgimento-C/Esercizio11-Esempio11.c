@@ -26,15 +26,14 @@ int main(){
     for(i=1; i<n; i++){
         if (dispari){
             /*Qui ci si trova nel punto decrescente....*/
-            if(numeri[i] %2 ==0 || numeri[i] <= numeri[i-1]){
+            if(numeri[i] %2 ==1 || numeri[i] >= numeri[i-1]){
                 crescente=0;
-
                 break;
             }
         } else {
 
             /*Qui ci si trova nel punto crescente...*/
-            if(numeri[i]%2 ==1 || numeri[i] >= numeri[i-1]){
+            if(numeri[i]%2 ==0 || numeri[i] <= numeri[i-1]){
                 crescente = 0;
 
                 break;
