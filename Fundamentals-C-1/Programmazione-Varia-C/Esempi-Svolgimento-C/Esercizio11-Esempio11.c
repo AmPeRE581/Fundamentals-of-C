@@ -27,7 +27,7 @@ int main(){
         if (dispari){
             /*Qui ci si trova nel punto decrescente....*/
             if(numeri[i] %2 == 1 || numeri[i] >= numeri[i-1]){
-                crescente = 0;
+                decrescente = 0;
                 break;
             }
         } else {
