@@ -11,8 +11,8 @@ Nota bene: gli elementi di v sono tutti distinti tra di loro*/
 int main(){
     int i,j, count, MAX_VALUE, v, k, N;
     float m[DIM][DIM]; /*Assumiamo che v possa contenere al massimo tutti gli elementi della matrice*/
-    int counts[2 * MAX_VALUE + 1] = 0; /*Array per cominciare il conteggio delle occorrenze*/
-    float v[DIM*DIM];
+    int counts[2 * MAX_VALUE + 1] = {0}; /*Array per cominciare il conteggio delle occorrenze*/
+    float v[DIM][DIM];
 
     int v_index = 0; /*Indice per il vettore v*/
 
