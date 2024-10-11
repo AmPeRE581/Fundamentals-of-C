@@ -157,3 +157,24 @@ if(indiceVeicoloDaRimuovere != -1){
     calcolaCosto(parcheggio, numVeicoli, indiceVeicoloDaRimuovere);
     rimuoviVeicolo(parcheggio, &numVeicoli, indiceVeicoloDaRimuovere);
 }
+
+/*------------------------------------------------------*/
+void stampaParcheggio(struct Veicolo parcheggio[], int numVeicoli){
+    if(numVeicoli==0){
+        printf("Il parcheggio è vuoto.\n");
+    } else {
+        printf("Veicoli parcheggiati:\n");
+
+        for(int i=0; i<numVeicoli; i++){
+            printf("Posto %d:\n", i+1);
+            printf("Targa: %s\n", parcheggio[i].targa);
+
+            /*Convertiamo l'ora per rendere leggibile l'orologio*/
+            char ora_ingresso_str[20];
+            strftime(ora_ingresso_str, sizeof(ora_ingresso_str),"%d/%m/%Y %H:%M:%S", localtime(&parcheggio[i].ora_ingresso));
+            printf("Ora di ingresso: %s\n", ora_ingresso_str);
+        }
+    }
+}
+
+}
