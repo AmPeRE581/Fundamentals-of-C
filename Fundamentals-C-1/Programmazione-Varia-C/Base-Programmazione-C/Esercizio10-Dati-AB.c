@@ -33,5 +33,23 @@ int main(){
     } else {
         printf("B è zero.\n");
     }
+
+    /*2. Determinare se A è un numero pari o dispari*/
+    if(A%2 == 0){
+        printf("A è un numero pari.\n");
+    } else {
+        printf("A è un numero dispari.\n");
+    }
+
+    /*3. Calcolare il valore di A+B*/
+    int somma=A+B;
+    printf("Il valore di A+B è: %d\n", somma);
+
+    /*4. Determinare quale scelta dei segni porta al risultato massimo*/
+    int max_valore = abs(A)+abs(B);
+    printf("La scelta dei segni nell'espressione (+-A) + (+-B) che porta al risultato massimo è: +|A| + |B|\n ");
+    printf("Il valore massimo è: %d\n", max_valore);
+
+    return 0;
 }
 
