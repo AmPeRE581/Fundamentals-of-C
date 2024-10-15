@@ -12,7 +12,7 @@ int main(){
 
     fahrenheit = (celsius * 9/5)+32;
 
-    printf("La Temperatura in Celsius convertita in Fahrenheit è: %f", fahrenheit);
+    printf("La Temperatura in Celsius convertita in Fahrenheit è: %f\n", fahrenheit);
 
     return 0;
 }
