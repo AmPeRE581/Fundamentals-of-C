@@ -22,8 +22,8 @@ int main(){
 
     /*E infine si stampano i risultati...e sono i seguenti: */
 
-    printf("L'area del quadrato è: %f\n", area_quadrato);
-    printf("L'area del cerchio è: %f\n", area_cerchio);
-    printf("L'area del triangolo è: %f\n", area_triangolo);
+    printf("L'area del quadrato è: %.2f\n", area_quadrato);
+    printf("L'area del cerchio è: %.2f\n", area_cerchio);
+    printf("L'area del triangolo è: %.2f\n", area_triangolo);
 }
 
