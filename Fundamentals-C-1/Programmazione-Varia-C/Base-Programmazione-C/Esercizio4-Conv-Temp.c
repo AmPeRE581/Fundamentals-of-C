@@ -3,10 +3,10 @@
 #include <stdio.h>
 
 int main(){
-    float celsius, fahrenheit;
+    float celsius, fahrenheit; /*Inizializzazione parametri*/
 
-    printf("Inserisci la temperatura in Celsius: ");
-    scanf("%f", &celsius);
+    printf("Inserisci la temperatura in Celsius: "); /*Presa temperatura in celsius*/
+    scanf("%f", &celsius); 
 
     /*Da qui facciamo la conversione mediante la formula...*/
 
