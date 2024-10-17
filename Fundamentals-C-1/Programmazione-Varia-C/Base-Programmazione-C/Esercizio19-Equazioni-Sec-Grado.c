@@ -50,6 +50,5 @@ int main(){
         double imaginaryPart = sqrt(-discriminante) / (2*a);
         printf("L'equazione ha due soluzioni complesse: x1 = %.2f + %.2fi, x2 = %.2f - %.2fi\n", realPart, imaginaryPart, realPart, imaginaryPart);
     }
+    return 0;
 }
-
-return 0;
