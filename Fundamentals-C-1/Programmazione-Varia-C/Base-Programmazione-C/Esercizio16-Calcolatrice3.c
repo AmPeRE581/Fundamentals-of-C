@@ -1,4 +1,4 @@
-/*Semplice calcolatrice 3
+/*Esercizio16: Semplice calcolatrice 3
 
 -- Scrivere un programma che legga da tastiera 3 numeri interi. I primi due numeri sono
 da intendersi come operandi, mentre il terzo numero specifica l’operazione da fare su di
