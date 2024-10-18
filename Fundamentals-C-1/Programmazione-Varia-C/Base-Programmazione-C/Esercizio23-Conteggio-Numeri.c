@@ -18,7 +18,11 @@ Numeri pari inseriti: 2*/
 #include <stdio.h>
 
 int main(){
-    int num, countPari =0; countTotale =0;
+    int num, countPari =0, countTotale =0;
+
+    for(int i=0; i<num; i++){
+        printf("Inserisci i seguenti numeri:\n");
+    
 
     while(1){
         scanf("%d", &num);
@@ -36,4 +40,5 @@ int main(){
     printf("Numeri pari inseriti: %d\n", countPari);
 
     return 0;
+}
 }
