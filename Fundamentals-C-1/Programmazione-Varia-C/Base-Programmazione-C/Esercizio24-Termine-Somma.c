@@ -18,7 +18,7 @@ int main(){
         prodotto *=num;
     }
 
-    printf("Il prodotto di tutti i numeri inseriti è: &lld\n", prodotto);
+    printf("Il prodotto di tutti i numeri inseriti è: %d\n", prodotto);
 
     return 0;
 }
