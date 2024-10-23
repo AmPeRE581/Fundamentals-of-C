@@ -34,7 +34,7 @@ int* numeriPerfetti(int x, int v1[], int n1, int *n2){
 }
 
 int main(){
-    int x, n1, n2, *v1, *v2, n2;
+    int x, n1, *v1, *v2, n2;
 
     printf("Inserisci il valore di x:");
     scanf("%d", &x);
