@@ -13,7 +13,7 @@ struct Videogioco{
     int quantita;
 }
 
-struct Videogioco catalogo[MAX_GIOCHI];
+struct Videogioco, catalogo[MAX_GIOCHI];
 int num_giochi=0;
 
 /*Funzione per aggiungere un nuovo gioco*/
@@ -26,7 +26,7 @@ void visualizza_catalogo(){
     printf("Catalogo dei giochi: \n");
     for(int i=0; i<num_giochi; i++){
         printf("Titolo: %s\n", catalogo[i].titolo);
-        printf("Genere: %s\n", catalogo[i].Genere);
+        printf("Genere: %s\n", catalogo[i].genere);
         printf("Piattaforma: %s\n", catalogo[i].piattaforma);
         printf("Prezzo: %.2f€\n", catalogo[i].prezzo);
         printf("Quantità: %d\n\n", catalogo[i].quantita);
