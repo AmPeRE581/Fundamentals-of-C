@@ -74,3 +74,61 @@ void getHealthProfile(HealthProfile *profile){
     printf("Enter weight in pounds: ");
     scanf("%d", &profile->weightPounds);
 }
+
+int getAge(HealthProfile profile){
+    int currentMonth, currentDay, currentYear;
+
+    printf("Enter current month, day, and year (MM DD YYYY): ");
+    scanf("%d %d %d", &currentMonth, &currentDay, &currentYear);
+
+    int age = currentYear - profile.birthYear;
+    if(currentMonth < profile.birthMonth || (currentMonth == profile.birthMonth && currentDay < profile.birthDay)){
+        age--;
+    }
+    return age;
+}
+
+float getBMI(HealthProfile profile){
+    float heightInMeters = profile.heightInches * 0.0254;
+    float weightKg = profile.weightPounds * 0.453592;
+    return weightKg / (heightInMeters * heightInMeters);
+}
+
+int getMaximumHeartRate(int age){
+    return 220-age;
+}
+
+void getTargetHeartRateRange(int getMaximumHeartRate){
+    int lowerLimit = getMaximumHeartRate * 0.5;
+    int upperLimit = getMaximumHeartRate * 0.85;
+    printf("Target Heart Rate Range: %d - %d beats per minute\n", lowerLimit, upperLimit);
+}
+
+int main(){
+    HealthProfile profile;
+    getHealthProfile(&profile);
+
+    int age = getAge(profile);
+    float bmi = getBMI(profile);
+    int maximumHeartRate = getMaximumHeartRate(age);
+
+    printf("\nHealth Profile:\n");
+    printf("Name: %s %s\n", profile.firstName, profile.lastName);
+    printf("Gender: %c\n", profile.gender);
+    printf("Date of Birth: %d%d%d\n", profile.birthMonth, profile.birthDay, profile.birthYear);
+    printf("Height: %d inches\n", profile.heightInches);
+    printf("Weight: %d pounds\n", profile.weightPounds);
+    printf("Age: %d years\n", age);
+    printf("BMI: %.1f\n", bmi);
+    printf("Maximum Heart Rate: %d beats per minute\n", maximumHeartRate);
+    getTargetHeartRateRange(maximumHeartRate);
+
+    printf("\nBMI Values:\n");
+    printf("Underweight: less than 18.5\n");
+    printf("Normal: between 18.5 and 24.9\n");
+    printf("Overweight: between 25 and 29.9\n");
+    printf("Obese: 30 or greater\n");
+
+
+    return 0;
+}
