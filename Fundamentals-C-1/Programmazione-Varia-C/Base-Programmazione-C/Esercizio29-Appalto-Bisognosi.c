@@ -1,3 +1,5 @@
+/*Esercizio29*/
+
 #include <stdio.h>
 #define MAX_AZIENDE 100
 

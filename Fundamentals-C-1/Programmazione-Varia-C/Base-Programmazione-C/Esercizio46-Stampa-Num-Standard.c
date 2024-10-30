@@ -1,4 +1,4 @@
-/*Scrivere ed eseguire un programma C opportunamente suddiviso in funzioni che letta in input una sequenza di 10 numeri, calcoli e stampi su standard output:
+/*Esercizio46: Scrivere ed eseguire un programma C opportunamente suddiviso in funzioni che letta in input una sequenza di 10 numeri, calcoli e stampi su standard output:
  -- la media dei numeri letti (come divisione tra la somma dei numeri e 10)
  -- il numero massimo tra i numeri letti
 Inoltre, siano ME la media e MA il massimo, per ogni numero X della sequenza, calcolare e stampare su standard output:

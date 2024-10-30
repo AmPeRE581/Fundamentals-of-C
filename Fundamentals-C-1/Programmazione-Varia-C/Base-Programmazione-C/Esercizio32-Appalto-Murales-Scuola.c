@@ -1,3 +1,5 @@
+/*Esercizio32*/
+
 #include <stdio.h>
 #define MAX_PROPOSTE 10
 

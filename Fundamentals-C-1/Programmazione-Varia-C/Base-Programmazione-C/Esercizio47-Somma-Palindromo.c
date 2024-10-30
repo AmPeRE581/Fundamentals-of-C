@@ -1,4 +1,4 @@
-/*Scrivere ed eseguire un programma C++ opportunamente suddiviso in funzioni che letta in input una sequenza di 10 caratteri, stampi su standard output “SI” se la sequenza è palindroma, “NO” altrimenti.
+/*Esercizio47: Scrivere ed eseguire un programma C++ opportunamente suddiviso in funzioni che letta in input una sequenza di 10 caratteri, stampi su standard output “SI” se la sequenza è palindroma, “NO” altrimenti.
 Una sequenza di caratteri si dice palindroma se, letta al contrario, rimane invariata. Ad esempio, sono palindrome le sequenze: “abcbaabcba”, “aeiouuoiea”.*/
 
 #include <stdio.h>

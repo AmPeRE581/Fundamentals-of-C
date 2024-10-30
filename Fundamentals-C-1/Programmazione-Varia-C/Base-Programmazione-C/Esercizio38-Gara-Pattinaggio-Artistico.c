@@ -1,4 +1,4 @@
-/*In una gara di pattinaggio artistico, ogni atleta esegue un programma per il quale cinque giudici esprimono un voto da 0 a 10. Come nella gara di tutti, il voto più alto e quello più basso vengono scartati e la somma dei tre voti rimanenti costituisce il punteggio finale dell’atleta.
+/*Esercizio38: In una gara di pattinaggio artistico, ogni atleta esegue un programma per il quale cinque giudici esprimono un voto da 0 a 10. Come nella gara di tutti, il voto più alto e quello più basso vengono scartati e la somma dei tre voti rimanenti costituisce il punteggio finale dell’atleta.
 Obiettivi del programma: 
 1.	Creazione di una matrice: Costruire una matrice contenente, per ogni atleta, il suo numero di gara, il punteggio finale, il punteggio più alto e il più basso.
 2.	Creazione di un vettore: Creare un vettore contenente i numeri di gara degli atleti che hanno ottenuto una media dei punteggi superiori a 8.5.
