@@ -6,9 +6,9 @@
 int main(){
     int n; /*Numero di Ordinazioni*/
     int id, nc; /*ID Cameriere e numero consumazioni*/
-    float importo, totale_incasso=0, min_importo;  
+    float importo, totale_incasso=0, min_importo; /*Usiamo float perchè sono cifre in virgola mobile...e quindi ci serve per i decimali*/ 
     int tip[100][3]; /*Matrice per le mance (id, mancia, min_importo)*/
-    int num_tip=0; /*Numero di righe utilizzate in tip*/
+    int num_tip=0; /*Numero di righe utilizzate in tip*/ /*- Si parte sempre inizializzando a partire da zero*/
 
     /*Leggo il numero delle ordinazioni*/
     printf("Inserisci il numero di ordinazioni:");
