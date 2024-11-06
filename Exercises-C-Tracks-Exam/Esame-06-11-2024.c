@@ -37,11 +37,11 @@ int main(){
     }
 
     /*Stampa i risultati*/
-    printf("\nCandidati ammessi all'orale:\n");
+    printf("Candidati ammessi all'orale: ");
     for(i=0; i< numOrali; i++){
-        printf("%d", orale[i]);
+        printf("%d %d", orale[i]);
     }
 
-    printf("\nIl candidato con matricola %d ha la media punteggi massima\n", id[maxIndex]);
-    printf("Il candidato con matricola %d ha la media punteggi minima\n", id[minIndex]);
+    printf("\nIl candidato con matricola %d ha la media punteggi massima.\n", id[maxIndex]);
+    printf("Il candidato con matricola %d ha la media punteggi minima.\n", id[minIndex]);
 }
